@@ -24,7 +24,7 @@ void computerRoll() {
 		DiceOne.roll();
 		DiceTwo.roll();
 		cPoints = cPoints + DiceOne.getValue() + DiceTwo.getValue();
-		cout << cPoints << endl;
+		//cout << cPoints << endl;
 	}
 
 	//the computer has rolled and points are calculated
