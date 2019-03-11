@@ -6,7 +6,7 @@
 #include "Dice.h"//the die class
 using namespace std;
 
-Die::Die(int x){ //defualt constructor
+Die::Die(int x){ //default constructor
 	sides = x;
 }
 
