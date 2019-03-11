@@ -20,10 +20,11 @@ int playerFailed =0;
 //because after 12 points it could go over 21
 void computerRoll() {
 	cPoints = 0;
-	while (cPoints <= 11) {
+	while (cPoints <= 9) {
 		DiceOne.roll();
 		DiceTwo.roll();
 		cPoints = cPoints + DiceOne.getValue() + DiceTwo.getValue();
+		cout << cPoints << endl;
 	}
 
 	//the computer has rolled and points are calculated
@@ -147,10 +148,10 @@ void gameLoop() {
 
 
 //runs the program
-//void main() {
-	//gameLoop();
+void main() {
+	gameLoop();
 
 
-//}
+}
 
 
