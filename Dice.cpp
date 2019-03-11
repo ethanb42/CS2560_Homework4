@@ -8,6 +8,7 @@ using namespace std;
 
 Die::Die(int x){ //default constructor
 	sides = x;
+	value = 0;
 }
 
 //******************************************************* 
@@ -20,6 +21,7 @@ void Die::roll()
 	const int MIN_VALUE = 1; // Minimum die value 
 
 	// Get a random value for the die. 
+	srand(time(NULL));
 	value = (rand() % (sides - MIN_VALUE + 1)) + MIN_VALUE;
 }
 
